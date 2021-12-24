@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font/css/all.css">
+    <title>Upwork</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            user-select: none;
+        } 
+        .section-1 {
+            /* background-color: #eee; */
+            align-items: center;
+        }
+        .navbar{
+            align-items: center;
+            text-align: center;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            margin-inline: 1.8rem;
+            padding: 1rem;
+            border-bottom: 1px solid rgb(75, 75, 75);
+        }
+        .links{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+        .navbar ul li{
+            list-style: none;
+           
+        }
+        .navbar ul .mar{
+            padding: 10px;
+        }
+
+        .links a{
+            justify-content: space-between;
+            list-style: none;
+            text-decoration: none;
+            margin-inline: 1rem;
+            color: rgb(112, 111, 111);
+            font-size: 18px;
+        }
+        .btn{
+            background-color: green;
+            padding: 10px;
+            margin: 0;
+            border-radius: 30px;
+        }
+        .btn a{
+            color: white;
+        }
+        .navbar h1{
+            color: green;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 25px;
+            
+        }
+        .search{
+            position: relative;
+        }
+        .search input{
+               font-size: 20px;
+               padding: 10px;
+               border: none;
+               border-radius: 20px;
+               border: 1px solid #ccc;
+               padding-left: 40px;
+               
+        }
+        .fa-search{
+            position: absolute;
+            left: 30px;
+            font-size: 22px;
+            color: rgb(82, 81, 81);
+            top: 11px;   
+        }
+        /* // second nav bar code start css */
+
+        .navbar2{
+            display: flex;
+            /* background-color: black; */
+            width: 95%;
+            margin: auto;
+            padding: 15px;
+            font-size: 17px;
+        }
+        .navbar2 ul {
+            list-style: none;
+            display: flex;
+        }
+        .navbar2 ul li a{
+            text-decoration: none;
+            color: rgb(116, 115, 115);
+            margin: 0.5rem;
+            
+        }
+        
+       /*  third section box start here */
+
+       .box1 {
+           border: 1px solid rgb(82, 82, 82);
+           width: 95%;
+           margin: auto;
+           height: 200px;
+       }
+       .container .logo{
+           width: 250px;
+       }
+       .container{
+           justify-content: space-between;
+       }
+    </style>
+</head>
+<body>
+     <section class="section-1">
+          <nav class="navbar">
+              <h1>upwork</h1>
+              <ul class="links">
+                  <li class="mar"><a href="">Find Talent</a></li>
+                  <li class="mar"><a href="">Find Work</a></li>
+                  <li class="mar"><a href="">Why Upwork</a></li>
+                  <li class="mar"><a href="">Enterprise</a></li>
+                  <li class="search"><a href=""><input type="text" placeholder="Search"><i class="fa fa-search"></i></a></li>
+                  <li class="mar"><a href="">Login</a></li>
+                  <li class="btn"><a href="">Sign Up</a></li>
+              </ul>        
+            </nav>
+     </section>
+     <!-- section 2 start here This is for second nav -->
+     <section class="section-2">
+             <nav class="navbar2">
+                 <ul class="">
+                 <li><a href="">Development & IT</a></li>
+                 <li><a href="">Design & Creative</a></li>
+                 <li><a href="">Sales & Marketing</a></li>
+                 <li><a href="">Writing & Tranlation</a></li>
+                 <li><a href="">Admin & Customer Support </a></li>
+                 <li><a href="">More</a></li>
+                </ul>
+             </nav>
+     </section>
+     <!-- section 3 start here This is for imge slider -->
+      <section class="section-3">
+              <div class="container">
+                   <div>
+                       <h1>How work</h1>
+                       <h1>should work</h1>
+                       <p></p>
+                   </div>
+                   <div class="imge">
+                        <img src="1.png" alt="" class="logo">
+                   </div>
+              </div>
+      </section>
+</body>
+</html>

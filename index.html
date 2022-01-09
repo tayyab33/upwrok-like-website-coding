@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font/css/all.css">
+    <title>Upwork</title>
+    <style>
+        :root {
+            --color: rgb(116, 115, 115);
+            --gr: green;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            user-select: none;
+        }
+
+        .section-1 {
+            /* background-color: #eee; */
+            align-items: center;
+        }
+
+        .navbar {
+            align-items: center;
+            text-align: center;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            margin-inline: 1.8rem;
+            padding: 1rem;
+            border-bottom: 1px solid rgb(75, 75, 75);
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .navbar ul li {
+            list-style: none;
+
+        }
+
+        .navbar ul .mar {
+            padding: 10px;
+        }
+
+        .links a {
+            justify-content: space-between;
+            list-style: none;
+            text-decoration: none;
+            margin-inline: 1rem;
+            color: rgb(112, 111, 111);
+            font-size: 18px;
+        }
+
+        .btn {
+            background-color: var(--gr);
+            padding: 10px;
+            margin: 0;
+            border-radius: 30px;
+        }
+
+        .btn a {
+            color: white;
+        }
+
+        .navbar h1 {
+            color: var(--gr);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 25px;
+
+        }
+
+        .search {
+            position: relative;
+        }
+
+        .search input {
+            font-size: 20px;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            padding-left: 40px;
+
+        }
+
+        .fa-search {
+            position: absolute;
+            left: 30px;
+            font-size: 22px;
+            color: rgb(82, 81, 81);
+            top: 11px;
+        }
+
+        /* // second nav bar code start css */
+
+        .navbar2 {
+            display: flex;
+            /* background-color: black; */
+            width: 95%;
+            margin: auto;
+            padding: 15px;
+            font-size: 17px;
+        }
+
+        .navbar2 ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar2 ul li a {
+            text-decoration: none;
+            color: rgb(116, 115, 115);
+            margin: 0.5rem;
+
+        }
+
+        /*  third section box start here */
+
+        .box1 {
+            border: 1px solid rgb(82, 82, 82);
+            width: 95%;
+            margin: auto;
+            height: 200px;
+        }
+
+        .container-1 .imge {
+            margin-top: 0rem;
+            margin-right: 2rem;
+        }
+
+        .container-1 .logo {
+            width: 350px;
+            margin-bottom: 6rem;
+            /* background-color: red; */
+            /* border: 1px solid black; */
+            /* border-radius: 50%; */
+        }
+
+        .container-1 {
+            display: flex;
+            margin-top: 3rem;
+            justify-content: space-around;
+        }
+
+        .container-1 #h-1 {
+            margin-top: 20px;
+            color: var(--gr);
+            font-size: 60px;
+        }
+
+        .container-1 #h-2 {
+            color: var(--gr);
+            font-size: 60px;
+            margin-bottom: 1rem;
+        }
+
+        .container-1 p {
+            color: var(--color);
+        }
+
+        .container-1 .first-part {
+            margin-left: 1rem;
+        }
+
+        .buttons {
+            margin-top: 1rem;
+        }
+
+        .buttons button {
+            padding: 10px;
+            margin: 0.2rem;
+            font-size: 17px;
+            border-radius: 50px;
+            border: 1px solid var(--gr);
+            background: none;
+            padding-left: 25px;
+            padding-right: 25px;
+            color: var(--gr);
+        }
+
+        .buttons button:hover {
+            background-color: var(--gr);
+            color: white;
+        }
+
+        .buttons button:nth-child(1) {
+            background-color: var(--gr);
+            color: white;
+
+        }
+
+        /* companies css here nav */
+        .container-1 .companies {
+            display: flex;
+            flex-direction: column;
+            margin-top: 3rem;
+            color: var(--color);
+        }
+
+        .container-1 .companies ul {
+            margin-top: 0.6rem;
+            list-style: none;
+            display: flex;
+            color: var(--color);
+        }
+
+        .container-1 .companies ul li {
+            margin-right: 0.5rem;
+        }
+/* 
+        section four css code start */
+
+
+        .section-4 .container-2{
+            margin: auto;
+            background-image: url("vlc_pOuoo9sRrf.jpg");
+            width: 95%;
+            height: 500px;
+            margin-top: 0px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            position: relative; 
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section-1">
+        <nav class="navbar">
+            <h1>upwork</h1>
+            <ul class="links">
+                <li class="mar"><a href="">Find Talent</a></li>
+                <li class="mar"><a href="">Find Work</a></li>
+                <li class="mar"><a href="">Why Upwork</a></li>
+                <li class="mar"><a href="">Enterprise</a></li>
+                <li class="search"><a href=""><input type="text" placeholder="Search"><i class="fa fa-search"></i></a>
+                </li>
+                <li class="mar"><a href="">Login</a></li>
+                <li class="btn"><a href="">Sign Up</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- section 2 start here This is for second nav -->
+
+    <section class="section-2">
+        <nav class="navbar2">
+            <ul class="">
+                <li><a href="">Development & IT</a></li>
+                <li><a href="">Design & Creative</a></li>
+                <li><a href="">Sales & Marketing</a></li>
+                <li><a href="">Writing & Tranlation</a></li>
+                <li><a href="">Admin & Customer Support </a></li>
+                <li><a href="">More</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- section 3 start here This is for imge slider -->
+
+    <section class="section-3">
+        <div class="container-1">
+            <div>
+                <div class="first-part">
+                    <h1 id="h-1">How work</h1>
+                    <h1 id="h-2">should work</h1>
+                    <p>Hire the best people. Find the best opportunties</p>
+                    <p>All from right here.</p>
+                    <div class="buttons">
+                        <button>Find Talent</button>
+                        <button>Find work</button>
+                    </div>
+                </div>
+                <div class="companies">
+                    <h4>Thrusted by</h4>
+                    <ul>
+                        <li>Microsoft</li>
+                        <li>Airbnb</li>
+                        <li>Bisseil</li>
+                        <li>Godaddy</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="imge">
+                <img src="1.png" alt="" class="logo">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- this section four -->
+<style>
+   .section-4 .container-2 .logo{
+         font-size: 25px;
+         color: white;
+         padding: 25px;
+    }
+    .section-4 .container-2 .head{
+        padding: 20px;
+        padding-top: 60px;
+        width: 50%;
+    }
+    .section-4 .container-2 .heading{
+        font-size: 60px;
+        color: white;
+    }
+    .main-box{
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        padding-top: 25px;
+    }
+    .main-box .box1,
+    .box2,
+    .box3{
+      height: 150px;
+      width: 350px;
+      background-color: var(--gr);
+      color: white;
+      border-radius: 10px;
+      padding: 15px;
+      font-size: 25px;
+    }
+    .section-4 .container-2 p{
+        color: white;
+        padding-left: 25px;
+        font-size: 15px;
+    }
+    .section-4 .main-box div:nth-child(3){
+       font-size: 22px;
+    }
+
+</style>
+    <section class="section-4">
+           <div class="container-2">
+                <h1 class="logo">For clients</h1>
+                <div class="head">
+                <h1 class="heading">Work with anyone.</h1>
+                <h1 class="heading">Anywhere.</h1>
+               </div>
+                <p>Find the right people. Not just the ones who happen to live nearby.</p>
+            <div class="main-box">
+                <div class="box1">
+                    <h1>Post a job </h1>
+                    <h1>And hire a pro</h1>
+                    <p>Talent Marketplace <i class="fa fa-arrow-alt-circle-right"></i></p>
+                </div>
+                <div class="box2">
+                    <h1>Browse and </h1>
+                    <h1>buy projects</h1>
+                    <p>Project catalog <i class="fa fa-arrow-alt-circle-right"></i></p>
+                </div>
+                <div class="box1">
+                    <h1>Let us help you find</h1>
+                    <h1>the right talent</h1>
+                    <p>Talent Marketplace <i class="fa fa-arrow-alt-circle-right"></i></p>
+                </div>
+            </div>
+           </div>
+    </section>
+    <style>
+        .section-5 .container-5{
+            display: flex;
+            margin: auto;
+            margin-top: 3rem;
+            grid-template-columns: 30rem 1fr;
+            width: 95%;
+            /* background-color: red; */
+        }
+        .section-5 .container-5 .box_1{
+            width: 70%;
+            background-color: rgb(194, 193, 193);
+            height: 500px;
+            border-radius: 10px;
+        }
+        .section-5 .container-5 .box_2{
+            width: 30%;
+            height: 500px;
+            background-color: green;
+            margin-left: 1rem;
+            border-radius: 10px;
+            /* border-start-start-radius: 10px ; */
+        }
+        .section-5 .container-5 .box_1 h1:nth-child(1){
+            font-size: 50px;
+            margin-left: 50px;
+            margin-top: 70px;
+        }
+        .section-5 .container-5 .box_1 h1:nth-child(2){
+            font-size: 50px;
+            margin-left: 50px;
+        }
+        .container-5 .box_1 .content{
+               margin-left: 50px;
+               margin-top: 1rem;
+        } 
+        .container-5 .box_1 .content h2{
+            font-size: 30px;
+            margin: 5px;
+            
+        }
+        .box_2 h1:nth-child(1){
+            margin-top: 10rem;
+        }
+        .box_2 h1{
+            margin-left: 1rem;
+            font-size: 40px;
+            color: white;
+        }
+        .section-5 .container-5 .box_2 p{
+            color: white;
+            margin-left: 1rem;
+        }
+        .section-5 .container-5 .box_2 h1:nth-child(4){
+            margin-top: 23px;
+        }
+        .section-5 .container-5 .box_1 .content h2:nth-child(1){
+            margin-top: 3rem;
+        }
+        .section-5 .container-5 .box_1 .content h2{
+            margin: 20px;
+        }
+        .section-5 .container-5 .box_1 .content p{
+            margin-left: 20px;
+        }
+        .section-5 .container-5 .box_2 p:nth-child(1){
+            margin-bottom: 23px;
+        }
+    </style>
+    <section class="section-5">
+        <div class="container-5">
+           <div class="box_1">
+                  <h1>Why businesses</h1>
+                  <h1>turn to Upwork</h1>
+               <div class="content">
+                  <h2>Proof of quality</h2>
+                  <p>Check any pro's work samples, client reviews. and identity verification</p>
+                  <h2>No cost until you hire</h2>
+                  <p>Interview potential fits for your job. negotiate reates, and only pay for you apporve.</p>
+                  <h2>Safe and secure</h2>
+                  <p>Focus on your work knowing we help protect your data and privacy. We're here with 24/7 support if you need it.
+                  </p>
+                </div>
+           </div>
+           <div class="box_2">
+               <h1>We're</h1>
+               <h1>the world's work</h1>
+               <h1>marketplace</h1>
+                <h1>4.9/5</h1>
+                <p>Clients rate professionals on Upwork</p>
+                <h1>Award winner</h1>
+                <p>Clients rate professionals on Upwork</p>
+            </div>
+        </div>
+    </section>
+       <style>
+           .section-6{
+               width: 90%;
+               margin: auto;
+           }
+           .section-6{
+               display: flex;
+               justify-content: space-between;
+           }
+           .section-6 .skills h1:nth-child(1){
+               font-size: 5rem;
+               margin-top: 5rem;
+               font-family: fantasy;
+               margin-left: 4rem;
+               font-weight: lighter;
+           }
+           .section-6 .skills .head h1:nth-child(2){
+               font-size: 5rem;
+               /* margin-top: 5rem; */
+               font-family: fantasy;
+               margin-left: 4rem;
+               font-weight: lighter;
+           }
+           .section-6 .skills h2{
+               color: rgb(107, 103, 103);
+               margin-left: 5rem;
+               padding: 1px;
+               margin-top: 0.5rem;
+               font-size: 1.8rem;
+               font-weight: lighter;
+           }
+           .section-6 .skills .green{
+               color: green;
+           }
+           .section-6 .box-4{
+               margin-top: 5.2rem;
+               margin-left: 0.2rem;
+           }
+           .section-6 .box-4 .image{
+               width: 65%;
+               border-radius: 10px;
+               margin-left: 5rem;
+           }
+           .section-6 .box-4 .skill-2{
+               display: grid;
+               grid-template-columns: 15rem 1fr;
+               padding-top: 1rem;
+               margin-right: 5rem;
+           }
+           .section-6 .box-4 .skill-2 h5{
+               font-size: 15px;
+               color: rgb(136, 128, 128);
+               border: 1px solid rgb(121, 116, 116);
+               border-radius: 20px;
+               text-align: center;
+               padding: 0.4rem;
+               margin: 5px;
+           }
+
+       </style>
+    <section class="section-6">
+         <div class="skills">
+             <div class="head">
+                 <h1>Hire a pro</h1>
+                 <h1>for any skill</h1>
+             </div>
+                 <h2 class="green"> Development & IT</h2>
+                 <h2>Design & Creative</h2>
+                 <h2>Sales & Marketing</h2>
+                 <h2>writing & Translation</h2>
+                 <h2>Admin & </h2>
+                 <h2>Design & Creative</h2>        
+         </div>
+         <div class="box-4">
+             <img class="image" src="DimScreen_EHpCS9KBzc.png" alt="">
+         <div class="skill-2">
+             <h5>Back-End Development</h5>
+             <h5>CMS Development</h5>
+             <h5>DevOps Engineering</h5>
+             <h5>Ecommerce Development</h5>
+             <h5>Front-End Development</h5>
+             <h5>Full Stack Development</h5>
+             <h5>Mobile App Development</h5>
+            <h5>Systems Administration</h5>
+         </div>
+         </div>
+
+    </section>
+    <style>
+        .section-7 .container-7{
+            display: flex;
+            margin: auto;
+            margin-top: 3rem;
+            grid-template-columns: 30rem 1fr;
+            width: 95%;
+            /* background-color: red; */
+        }
+        .section-7 .container-7 .box_1{
+            width: 50%;
+            background-color: rgb(194, 193, 193);
+            height: 550px;
+            /* border-radius: 10px; */
+        }
+        .section-7 .container-7 .box_9{
+            width: 50%;
+            height: 550px;
+            background-color: green;
+            /* margin-left: 1rem; */
+            /* border-radius: 10px; */
+            /* border-start-start-radius: 10px ; */
+        }
+        .section-7 .container-7 .box_1 h1:nth-child(1){
+            font-size: 50px;
+            margin-left: 50px;
+            margin-top: 70px;
+        }
+        .section-7 .container-7 .box_1 h1:nth-child(2){
+            font-size: 50px;
+            margin-left: 50px;
+        }
+        .container-5 .box_1 .content{
+               margin-left: 50px;
+               margin-top: 1rem;
+        } 
+        .container-5 .box_1 .content h2{
+            font-size: 30px;
+            margin: 5px;
+            
+        }
+        
+        .box_9 h1{
+            margin-left: 1rem;
+            font-size: 40px;
+            color: white;
+        }
+        .section-7 .container-7 .box_9 p{
+            color: white;
+            margin-left: 1rem;
+        }
+        
+        .section-7 .box_1{
+            align-items: center;
+            text-align: center;
+        }
+        .section-7 .box_1 img{
+             width: 80%;
+             margin-top: 10%;
+        }
+        .box_9 :nth-child(1){
+            margin-top: 4rem;
+        }
+        .box_9{
+            padding: 0.2rem;
+        }
+        .box_9 #ph{
+            color: white;
+        }
+        .box_9 #ph {
+             /* background-color: red;   */
+             width: 35rem;
+             margin: auto;
+             display: flex;
+             flex-direction: row;
+        }
+        .box_9 button{
+            margin-left: 4rem;
+            padding: 0.5rem;
+            border-radius: 20px;
+            border: none;
+            font-weight: bold;
+            margin-top: 2rem;
+        }
+        .box_9 h1:nth-child(2){
+            font-size: 4rem;
+            width: 20rem;
+            margin-left: 3rem;
+        }
+        .box_9 h1:nth-child(1){
+            margin-top: 0;
+            margin-bottom: 5rem;
+            margin-left: 3rem;
+            font-size: 1.3rem;
+            
+        }
+        .section-7 .container-7 .box_9 p{
+            font-size: 1.1rem;
+            margin-left: 3.3rem;
+            margin-bottom: 2rem;
+
+        }
+        .section-7 .container-7 .box_9 #line{
+             width: 85%;
+             margin: auto;
+        }
+    </style>
+    <section class="section-7">
+        <div class="container-7">
+           <div class="box_1">
+                <img src="1.png" alt="">
+           </div>
+           <div class="box_9">
+               <h1>For talent</h1>
+               <h1>Find great work</h1>
+                <p>Meet clients you're excited to work with and take your career or business to new heights</p>
+                 <hr id="line" />
+                 <div id="ph">
+        <pre>
+        Find opportunities       Control when         Explore different
+        for every stage of       where, and how       ways to earn
+        your freelance            you work
+        career
+    </pre>
+                </div>
+                <button>Find Opportunities</button>
+            </div>
+        </div>
+    </section>
+    <link href="box-8.html">
+</body>
+
+</html>
